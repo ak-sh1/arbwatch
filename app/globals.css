@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #0a0e1a;
+  color: #e1e4e8;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  border-bottom: 2px solid #1e2432;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #58a6ff;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #8b949e;
+  font-size: 0.95rem;
+}
+
+.disclaimer {
+  background: #1a1e2e;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 30px;
+  color: #f85149;
+  font-size: 0.9rem;
+}
+
+.dashboard {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: #c9d1d9;
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 10px;
+}
+
+.venue-health {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.venue-status {
+  flex: 1;
+  min-width: 200px;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.venue-status h3 {
+  font-size: 1rem;
+  color: #8b949e;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.venue-status .status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.healthy {
+  background: #3fb950;
+  box-shadow: 0 0 10px rgba(63, 185, 80, 0.5);
+}
+
+.status-dot.unhealthy {
+  background: #f85149;
+  box-shadow: 0 0 10px rgba(248, 81, 73, 0.5);
+}
+
+.opportunities-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.opportunity-card {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 16px;
+  transition: border-color 0.2s;
+}
+
+.opportunity-card.alert {
+  border-color: #58a6ff;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+}
+
+.opportunity-card.stale {
+  opacity: 0.6;
+}
+
+.opportunity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.opportunity-symbol {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #58a6ff;
+}
+
+.opportunity-route {
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+.opportunity-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  color: #8b949e;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.metric-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.metric-value.positive {
+  color: #3fb950;
+}
+
+.metric-value.negative {
+  color: #f85149;
+}
+
+.metric-value.neutral {
+  color: #8b949e;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge.alert {
+  background: rgba(88, 166, 255, 0.2);
+  color: #58a6ff;
+}
+
+.badge.stale {
+  background: rgba(248, 81, 73, 0.2);
+  color: #f85149;
+}
+
+.chart-container {
+  margin-top: 16px;
+  padding: 16px;
+  background: #0d1117;
+  border-radius: 6px;
+}
+
+.no-opportunities {
+  text-align: center;
+  padding: 40px;
+  color: #8b949e;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #8b949e;
+}
+
+@media (max-width: 768px) {
+  .opportunity-metrics {
+    grid-template-columns: 1fr;
+  }
+  
+  .venue-health {
+    flex-direction: column;
+  }
+}

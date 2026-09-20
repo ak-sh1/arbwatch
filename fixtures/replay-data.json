@@ -1,0 +1,74 @@
+{
+  "BTC": {
+    "coinbase": [
+      { "bid": 65000, "ask": 65050, "timestamp": 0 },
+      { "bid": 65020, "ask": 65070, "timestamp": 1000 },
+      { "bid": 65100, "ask": 65150, "timestamp": 2000 },
+      { "bid": 65080, "ask": 65130, "timestamp": 3000 },
+      { "bid": 65200, "ask": 65250, "timestamp": 4000 },
+      { "bid": 65180, "ask": 65230, "timestamp": 5000 }
+    ],
+    "binance": [
+      { "bid": 64950, "ask": 65000, "timestamp": 0 },
+      { "bid": 64980, "ask": 65030, "timestamp": 1000 },
+      { "bid": 65050, "ask": 65100, "timestamp": 2000 },
+      { "bid": 65030, "ask": 65080, "timestamp": 3000 },
+      { "bid": 65100, "ask": 65150, "timestamp": 4000 },
+      { "bid": 65090, "ask": 65140, "timestamp": 5000 }
+    ]
+  },
+  "ETH": {
+    "coinbase": [
+      { "bid": 2500, "ask": 2505, "timestamp": 0 },
+      { "bid": 2502, "ask": 2507, "timestamp": 1000 },
+      { "bid": 2510, "ask": 2515, "timestamp": 2000 },
+      { "bid": 2508, "ask": 2513, "timestamp": 3000 },
+      { "bid": 2520, "ask": 2525, "timestamp": 4000 },
+      { "bid": 2518, "ask": 2523, "timestamp": 5000 }
+    ],
+    "binance": [
+      { "bid": 2495, "ask": 2500, "timestamp": 0 },
+      { "bid": 2498, "ask": 2503, "timestamp": 1000 },
+      { "bid": 2505, "ask": 2510, "timestamp": 2000 },
+      { "bid": 2503, "ask": 2508, "timestamp": 3000 },
+      { "bid": 2512, "ask": 2517, "timestamp": 4000 },
+      { "bid": 2510, "ask": 2515, "timestamp": 5000 }
+    ]
+  },
+  "SOL": {
+    "coinbase": [
+      { "bid": 140.5, "ask": 141.0, "timestamp": 0 },
+      { "bid": 140.8, "ask": 141.3, "timestamp": 1000 },
+      { "bid": 141.2, "ask": 141.7, "timestamp": 2000 },
+      { "bid": 141.0, "ask": 141.5, "timestamp": 3000 },
+      { "bid": 141.5, "ask": 142.0, "timestamp": 4000 },
+      { "bid": 141.3, "ask": 141.8, "timestamp": 5000 }
+    ],
+    "binance": [
+      { "bid": 140.0, "ask": 140.5, "timestamp": 0 },
+      { "bid": 140.3, "ask": 140.8, "timestamp": 1000 },
+      { "bid": 140.7, "ask": 141.2, "timestamp": 2000 },
+      { "bid": 140.5, "ask": 141.0, "timestamp": 3000 },
+      { "bid": 141.0, "ask": 141.5, "timestamp": 4000 },
+      { "bid": 140.8, "ask": 141.3, "timestamp": 5000 }
+    ]
+  },
+  "XRP": {
+    "coinbase": [
+      { "bid": 0.525, "ask": 0.530, "timestamp": 0 },
+      { "bid": 0.527, "ask": 0.532, "timestamp": 1000 },
+      { "bid": 0.530, "ask": 0.535, "timestamp": 2000 },
+      { "bid": 0.528, "ask": 0.533, "timestamp": 3000 },
+      { "bid": 0.532, "ask": 0.537, "timestamp": 4000 },
+      { "bid": 0.530, "ask": 0.535, "timestamp": 5000 }
+    ],
+    "binance": [
+      { "bid": 0.520, "ask": 0.525, "timestamp": 0 },
+      { "bid": 0.522, "ask": 0.527, "timestamp": 1000 },
+      { "bid": 0.525, "ask": 0.530, "timestamp": 2000 },
+      { "bid": 0.523, "ask": 0.528, "timestamp": 3000 },
+      { "bid": 0.527, "ask": 0.532, "timestamp": 4000 },
+      { "bid": 0.525, "ask": 0.530, "timestamp": 5000 }
+    ]
+  }
+}
